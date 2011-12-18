@@ -1,0 +1,28 @@
+#chatin{
+	border: 1px solid black;
+	width: 500px;
+	height: 50px;
+	overflow: hidden;
+}
+
+#chatout{
+	border: 1px solid black;
+	width: 500px;
+	height: 400px;
+	overflow: auto;
+}
+
+.irow{
+	display:block;
+	margin-left: 10px;
+}
+.ilabel{
+	width: 15%;
+	float: left;
+	text-align: right;
+}
+.iinput{
+	width: 80%;
+	float: left;
+	margin-left:10px;
+}
