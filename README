@@ -13,3 +13,9 @@ there is always one outstanding ajax request.  If a client drops, his connection
 purged from the list on the next iteration.
 
 -Rex
+
+To Run:
+
+from the install directory: node nodechatserver.js
+
+then browse to: localhost:8080/nodechat.html
