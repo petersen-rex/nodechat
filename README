@@ -1,0 +1,15 @@
+I found some overly complicated examples of chat servers using NodeJs so I set out to create a simple example.
+
+The client connects and waits for a response.  
+
+The server preserves a list of connected clients in the responses[] array.
+
+Once the server has satisfied one request, the response element is deleted for that client.  So the server's only state
+information is a list of clients who are currently expecting a response and that list is completely destructed 
+every time a message is broadcast.
+
+Subsequently the client receives the message and reconnects.  So, from the clients perspective
+there is always one outstanding ajax request.  If a client drops, his connection will be automatically
+purged from the list on the next iteration.
+
+-Rex
